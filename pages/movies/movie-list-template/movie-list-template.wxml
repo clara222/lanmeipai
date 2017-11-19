@@ -1,0 +1,19 @@
+<import src="../oneMovie-template/oneMovie-template.wxml" />
+<template name="movie-list">
+
+  <view class="movie-list-container">
+    <view class="header">
+      <text class="title">{{headerName}}</text>
+      <view class="more" bindtap="movieMore" data-headname="{{headerName}}">
+        <text>更多</text>
+        <image src="/pages/images/arrow-right.png"></image>
+      </view>
+    </view>
+    <view class="body">
+      <block wx:for="{{movie}}" wx:key="key">
+        <template is="movie" data="{{...item}}"/>
+      </block>
+
+    </view>
+  </view>
+</template>

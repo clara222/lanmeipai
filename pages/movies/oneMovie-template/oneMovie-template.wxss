@@ -1,0 +1,27 @@
+@import "../star-template/star-template.wxss";
+.movie-container {
+  width: 214rpx;
+  display: flex;
+  flex-direction: column;
+  
+}
+.movie-container image {
+  width: 100%;
+  height: 300rpx;
+  margin-top: 28rpx;
+}
+.movie-container .title {
+  font-size: 30rpx;
+  color: #666;
+  line-height: 80rpx;
+}
+.average {
+  display: flex;
+  justify-content: space-between;
+}
+.average .score {  
+  margin-right: 30rpx; 
+  font-size: 26rpx;
+  color: #333;
+}
+

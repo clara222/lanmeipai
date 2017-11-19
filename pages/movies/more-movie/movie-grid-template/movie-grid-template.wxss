@@ -1,0 +1,11 @@
+@import "../../oneMovie-template/oneMovie-template.wxss";
+
+.movie-gird {
+  padding-top: 0;
+  padding-left: 12rpx;
+}
+.movie-gird .movie-item{
+  float: left;
+  margin: 0 15rpx 15rpx 15rpx;
+ 
+}

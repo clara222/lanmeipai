@@ -1,0 +1,8 @@
+<template name="star">
+  <view class="star-container">
+    <block wx:for="{{stars}}" wx:key="key">
+      <image class="star" src="{{item?'/pages/images/star.png':'/pages/images/none-star.png'}}"></image>
+    </block>
+
+  </view>
+</template>

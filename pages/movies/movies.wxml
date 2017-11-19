@@ -1,0 +1,17 @@
+<import src="movie-list-template/movie-list-template.wxml" />
+<import src="more-movie/movie-grid-template/movie-grid-template.wxml"/>
+ <view class="search">
+  <icon type="search" class="icon-search" size="18"/>  
+  <input type="text" placeholder="电影名称/演员" bindfocus="showSearchPannel" bindblur="getSearchResult" placeholder-class="placeholder" />
+  <icon type="clear" wx:if="{{searchPannel}}" bindtap="clearSearch" class="icon-clear" size="18"/> 
+</view>    
+
+<block wx:if="{{moviePage}}">
+  <template is="movie-list" data="{{...nowPlay}}"/>
+  <template is="movie-list" data="{{...goingPlay}}"/>
+  <template is="movie-list" data="{{...topNum}}"/>
+</block>
+
+<view class="searchPannel" wx:if="{{searchPannel}}">
+  <template is="movie-gird" data="{{...searchResult}}"/>
+</view>

@@ -1,0 +1,19 @@
+<image class="bg" wx:if="{{artData.bodyBg}}" src="{{artData.bodyBg}}"></image>
+<view class="artD-container">
+  <view class="article-header">
+    <image class="author-icon" wx:if="{{artData.authorIcon}}" src="{{artData.authorIcon}}"></image>
+    <text class="author-name">{{artData.authorName}}</text>
+    <text class="author-date">{{artData.authorDate}}</text>
+    <image class="music-control" catchtap="playM" src="{{isPlayMusic?'/pages/images/earphone.png':'/pages/images/eartag.png'}}"></image> 
+  </view>
+  <view class="article-body">
+    <text class="body-heading">{{artData.bodyHeading}}</text>
+    <view class="sc">
+      <text class="line"></text>
+      <image class="colle" wx:if="{{collect}}" catchtap="setCol" src="/pages/images/collection.png"></image>
+      <image class="colle" wx:else catchtap="setCol" src="/pages/images/collection-anti.png"></image>
+      <image catchtap="share" src="/pages/images/share.png"></image>
+    </view>    
+  <text class="body-content">{{artData.bodyContent}}</text>
+  </view>
+</view>

@@ -1,0 +1,10 @@
+<import src="../../oneMovie-template/oneMovie-template.wxml" />
+<template name="movie-gird">
+  <view class="movie-gird">
+    <block wx:for="{{movie}}" wx:key="key">
+      <view class="movie-item">
+        <template is="movie" data="{{...item}}" />
+      </view>
+    </block>
+  </view>
+</template>

@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .logo {
+    width: 392rpx;
+    height: 96rpx;
+    margin-top: 100rpx;
+}
+.container .user {
+  font-weight: 500;
+  font-size: 20px;
+  margin-top: 220rpx;
+}
+.container .my-btn {
+  border: 1px solid #109D59;
+  margin-top: 300rpx;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 34rpx;
+  color: #109D59;
+}

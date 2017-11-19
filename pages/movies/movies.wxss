@@ -1,0 +1,24 @@
+@import "movie-list-template/movie-list-template.wxss";
+@import "more-movie/movie-grid-template/movie-grid-template.wxss";
+page {
+  background-color: #f1f1f1;
+}
+.search {
+  width: 100%;
+  height: 80rpx;
+  background-color: #eee;
+  display: flex;
+}
+.search input {
+  width: 600rpx;
+  margin: auto 0 auto 30rpx;
+}
+.icon-search {
+  margin: auto 0 auto 30rpx;
+}
+.icon-clear {
+  margin: auto 20rpx auto 0;
+}
+.placeholder {
+  font-size: 30rpx;
+}

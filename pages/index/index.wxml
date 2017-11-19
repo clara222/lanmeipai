@@ -1,0 +1,7 @@
+<view class="container">
+  <image class="logo" src="../images/logo.png"></image>
+  <text class="user">hello,Clara</text>
+  <view class="my-btn" catchtap="goNews">
+    <text>和音乐一起分享时光</text>
+  </view>
+</view>

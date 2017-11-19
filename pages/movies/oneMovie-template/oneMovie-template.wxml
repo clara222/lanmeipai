@@ -1,0 +1,14 @@
+<import src="../star-template/star-template.wxml" />
+<template name="movie">
+  <view class="movie-container" bindtap="goMovieDetail" data-id="{{id}}">
+    <image v-if="{{images.large}}" src="{{images.large}}"></image>
+    <text class="title">{{title}}</text>
+    <view class="average">
+      <view class="star">
+        <template is="star" data="{{stars:rating.stars}}"/>
+      </view>
+      <text class="score">{{rating.average}}</text>
+    </view>
+
+  </view>
+</template>

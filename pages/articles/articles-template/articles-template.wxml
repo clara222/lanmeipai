@@ -1,0 +1,24 @@
+<template name="articles-template">
+  <view class="article-list">
+    <view class="article-header">
+      <image class="author-icon" src="{{item.authorIcon}}"></image>
+      <text class="author-name">{{item.authorName}}</text>
+      <text class="author-date">{{item.authorDate}}</text>
+    </view>
+    <view class="article-body">
+      <text class="body-heading">{{item.bodyHeading}}</text>
+      <image class="body-bg" src="{{item.bodyBg}}"></image>
+      <text class="body-content">{{item.bodyContentMin}}</text>
+    </view>
+    <view class="article-footer">
+      <view class="like">
+        <image src="../images/sc.png"></image>
+        <text class="like-total">{{item.likeTotal}}</text>
+      </view>
+      <view class="comment">
+        <image src="../images/fx.png"></image>
+        <text class="comment-total">{{item.commentTotal}}</text>
+      </view>
+    </view>
+  </view>
+</template>

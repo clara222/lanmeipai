@@ -1,0 +1,56 @@
+<import src="../star-template/star-template.wxml" />
+<view class="movie-detail-container">
+  <view class="header">
+    <image class="header-bg" wx:if="{{movieDetail.movieImg}}" src="{{movieDetail.movieImg}}" mode="scaleToFill"></image>
+    <view class="header-content-box">
+      <image src="{{movieDetail.movieImg}}" wx:if="{{movieDetail.movieImg}}"></image>
+      <view class="content">
+        <text class="title">{{movieDetail.title}}</text>
+        <text class="year">{{movieDetail.year+' . '+movieDetail.country}}</text>
+        <view class="like">
+          <text class="like-color">{{movieDetail.wish_count}}</text>
+          <text>喜欢</text>
+          <text class="like-color">{{movieDetail.commentCount}}</text>
+          <text>评论</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="detail">
+    <text class="another-title">{{movieDetail.original_title}}</text>
+    <view class="score">
+      <text class="detail-l">评分</text>
+      <view class="detail-r star-box">
+        <template is="star" data="{{stars:movieDetail.stars}}" />
+        <text class="average">{{movieDetail.score}}</text>
+      </view>
+    </view>
+    <view class="director">
+      <text class="detail-l">导演</text>
+      <text class="detail-r">{{movieDetail.director}}</text>
+    </view>
+    <view class="casts">
+      <text class="detail-l">主演</text>
+      <text class="detail-r">{{movieDetail.castsName}}</text>
+    </view>
+    <view class="genres">
+      <text class="detail-l">类型</text>
+      <text class="detail-r">{{movieDetail.genres}}</text>
+    </view>
+  </view>
+  <view class="summary">
+    <text class="title">剧情简介</text>
+    <text class="content">{{movieDetail.summary}}</text>
+  </view>
+  <view class="casts-detail">
+    <text class="title">主演</text>
+    <view class="castInfo">
+      <block wx:for="{{movieDetail.castsInfo}}" wx:key="key">
+        <view class="cast-msg">
+          <image wx:if="{{item.avatar}}" src="{{item.avatar}}"></image>
+          <text class="cast-name">{{item.name}}</text>
+        </view>
+      </block>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,11 @@
+.star-container {
+  width: 100%;
+  height: 20rpx;
+  display: flex;
+}
+.star-container .star{
+  width: 20rpx;
+  height: 20rpx;
+  margin-top: 8rpx;
+
+} 

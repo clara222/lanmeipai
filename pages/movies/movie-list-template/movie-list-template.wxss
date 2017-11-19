@@ -1,0 +1,29 @@
+@import "../oneMovie-template/oneMovie-template.wxss";
+.movie-list-container {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 36rpx;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  padding: 26rpx 20rpx;
+
+}
+.header {
+  display: flex;
+  font-size: 28rpx;
+  color: #333;
+  justify-content: space-between;
+}
+.more text {
+  color: #1D4AF5;
+}
+.more image{
+  width: 20rpx;
+  height: 20rpx;
+  margin-left: 10rpx;
+}
+.body {
+  display: flex;
+  justify-content: space-between;
+}

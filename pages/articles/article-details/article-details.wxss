@@ -1,0 +1,77 @@
+.artD-container {
+  padding: 0 40rpx; 
+}
+
+.bg {
+  width: 100%;
+  height: 440rpx;
+}
+
+.article-header {
+  padding-top: 20rpx;
+  padding-bottom: 30rpx;  
+}
+
+.article-header .author-icon {
+  width: 80rpx;
+  height: 80rpx;
+  vertical-align: middle;
+}
+
+.article-header .author-name {
+  font-size: 36rpx;
+  font-weight: 500;
+  margin-left: 24rpx;
+}
+
+.article-header .author-date {
+  font-size: 28rpx;
+  margin-left: 24rpx;
+}
+.article-header .music-control {
+  width: 38rpx;
+  height: 38rpx;
+  vertical-align: middle;
+  margin-left: 22rpx;
+}
+.article-body {
+  display: flex;
+  flex-direction: column;
+}
+.body-heading {
+  font-size: 34rpx;
+  font-weight: 500;
+  padding-bottom: 10rpx;
+
+}
+.sc {
+  position: relative;
+  margin-top: 60rpx;
+}
+.sc .line {
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #ddd;
+
+}
+.sc image {
+  width: 80rpx;
+  height: 80rpx;
+  position: absolute;
+  top: 50%;
+  right: 6rpx;
+  margin-top: -40rpx;
+}
+
+.sc .colle {
+  margin-right: 100rpx;
+}
+.body-content {
+  margin-top: 60rpx;
+  margin-bottom: 30rpx;
+  font-size: 30rpx;
+  line-height: 50rpx;
+  letter-spacing: 1px;
+  color: #333;
+}

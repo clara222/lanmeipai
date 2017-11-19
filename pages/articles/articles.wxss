@@ -1,0 +1,15 @@
+@import "articles-template/articles-template.wxss";
+.articles-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #eee;
+  width: 100%;
+}
+.articles-container swiper {
+  width: 100%;
+}
+.banner-item{
+  width: 100%;
+  height: 100%;
+}
+

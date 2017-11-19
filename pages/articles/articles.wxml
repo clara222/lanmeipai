@@ -1,0 +1,22 @@
+<view class="articles-container">
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" circular="{{circular}}">
+    <swiper-item>
+      <image class="banner-item" src="../images/banner2.jpg"></image>
+    </swiper-item>
+    <swiper-item>
+      <image class="banner-item" src="../images/banner1.jpg"></image>
+    </swiper-item>
+    <swiper-item>
+      <image class="banner-item" src="../images/banner3.jpg"></image>
+    </swiper-item>
+  </swiper>
+
+  <import src="articles-template/articles-template.wxml"/>
+  <block wx:for="{{articlesData.articlesdata}}" wx:key="key">
+    <view bindtap="goDetail" data-getid="{{item.id}}">
+      <template is="articles-template" data="{{item}}"/>
+    </view>
+    
+  </block>
+
+</view>
